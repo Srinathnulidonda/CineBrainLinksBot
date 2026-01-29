@@ -1,805 +1,471 @@
-# Professional README.md for CineBrain Movie Bot
+# Markdown Editor Online - Free Live Preview 🚀
 
-<div align="center">
+Welcome to **MarkdownLivePreview.dev** - the best **online markdown editor** with live preview! **Edit markdown online** for free with our powerful **markdown editor online** featuring real-time preview, LaTeX support, and advanced tools. Perfect for developers, writers, and technical documentation. No signup required - start using our **free online markdown editor** instantly!
 
-# 🎬 CineBrain Movie Bot
+[![Made by DigitalPro](https://img.shields.io/badge/Made%20by-DigitalPro-blue)](https://digitalpro.dev)
+![Version](https://img.shields.io/badge/Version-1.0.2-blue)
 
-### *Intelligent Telegram Bot for Movie Enrichment & Channel Automation*
+## Why Choose Our Online Markdown Editor?
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Telegram](https://img.shields.io/badge/Telegram-Bot%20API-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://core.telegram.org/bots/api)
-[![TMDB](https://img.shields.io/badge/TMDB-API%20v3-01D277?style=for-the-badge&logo=themoviedatabase&logoColor=white)](https://www.themoviedb.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+Our **markdown editor online** delivers the most powerful free editing experience available. Whether you need an **online markdown editor** with live preview, **markdown online editor** with file upload, or **markdown editor with preview** - our platform has everything you need:
 
-[![Deploy on Railway](https://img.shields.io/badge/Deploy%20on-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://railway.app)
-[![Deploy to Render](https://img.shields.io/badge/Deploy%20to-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com)
+- **🚀 Live Preview**: Real-time **markdown live preview** as you type
+- **📁 File Upload**: Upload and edit existing .md files instantly  
+- **📊 Table Generator**: Built-in [markdown table generator](/tools/table-generator) tool
+- **🔢 LaTeX Math**: Full LaTeX equation support with live rendering
+- **💾 Auto-Save**: Your work saves automatically to browser storage
+- **📱 Mobile Ready**: Perfect **web markdown editor** for all devices
+- **⚡ Instant Start**: No registration - start with our **free online markdown editor** now
 
-<img src="https://raw.githubusercontent.com/yourusername/cinebrain-movie-bot/main/assets/banner.png" alt="CineBrain Banner" width="800">
+> **Pro Tip**: Perfect for academic writing, technical documentation, and any content requiring **math in markdown**!
 
-**Transform your movie files into beautifully formatted channel posts with posters, ratings, and detailed information — all automatically!**
+## Online Markdown Editor Features
 
-[🚀 Quick Start](#-quick-start) •
-[✨ Features](#-features) •
-[📖 Documentation](#-documentation) •
-[🌐 Deploy](#-deployment) •
-[💬 Support](#-support)
+Our **online markdown editor** is designed for maximum productivity and ease of use. Whether you're a developer, writer, or student, our **markdown editor online** provides everything you need:
 
----
+**🎯 Perfect For:**
+- 📋 GitHub README files and documentation
+- 📝 Technical writing and blog posts
+- 📊 Data tables with the built-in table generator
+- 🎓 Academic papers with LaTeX equations
+- 💼 Professional documentation and reports
+- 🔗 Creating markdown links and formatting
 
-</div>
+**⚡ Key Features:**
+- **Real-time preview** - See changes instantly
+- **File upload support** - Edit existing markdown files
+- **Syntax highlighting** - Beautiful code formatting
+- **Export options** - Save as HTML, PDF, or download .md files
 
-## 📋 Table of Contents
+> **Tip**: Use our [tools suite](/tools) for specialized **markdown** tasks like table generation!
 
-<details>
-<summary>Click to expand</summary>
+## Online Markdown Viewer & Editor
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Demo](#-demo)
-- [Quick Start](#-quick-start)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Usage](#-usage)
-- [Commands](#-commands)
-- [Deployment](#-deployment)
-- [Project Structure](#-project-structure)
-- [API Reference](#-api-reference)
-- [Troubleshooting](#-troubleshooting)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Acknowledgments](#-acknowledgments)
+Need an **online markdown viewer**? Our **markdown online viewer** gives you instant preview of any markdown file. Upload, paste, or type directly into our **markdown editor with preview**:
 
-</details>
+**✨ Preview Support:**
+- ✅ GitHub-flavored markdown syntax
+- ✅ Tables with column alignment  
+- ✅ Code syntax highlighting (20+ languages)
+- ✅ LaTeX math equations and formulas
+- ✅ Links, images, and media embedding
+- ✅ Task lists and checkboxes
 
----
+**🚀 Popular Uses:**
+- Preview README.md files before GitHub commits
+- Edit and preview technical documentation  
+- Create formatted reports and presentations
+- Write academic papers with mathematical notation
+- Build markdown content for websites and blogs
 
-## 🎯 Overview
-
-**CineBrain Movie Bot** is a production-grade Telegram bot that automatically enriches forwarded movie files with comprehensive metadata from TMDB. It intelligently parses filenames, fetches movie information, and posts beautifully formatted content to your channel.
-
-### Why CineBrain?
-
-| Problem | Solution |
-|---------|----------|
-| 📁 Messy movie filenames | 🧠 Smart AI-powered parsing |
-| 🔍 Manual movie searches | ⚡ Automatic TMDB lookup |
-| 📝 No movie information | 📊 Rich metadata & posters |
-| ⏰ Time-consuming posting | 🤖 One-click automation |
+> **💡 Quick Start**: Just start typing in the left pane to see your **live markdown preview** on the right!
 
 ---
 
-## ✨ Features
+## Start Editing Markdown Online Now!
 
-<div align="center">
-
-| Feature | Description |
-|---------|-------------|
-| 🧠 **Smart Parsing** | Extracts movie titles from any filename format |
-| 🎬 **TMDB Integration** | Fetches posters, ratings, genres, runtime |
-| ✏️ **Title Editing** | Manually correct parsed titles |
-| 📋 **Multiple Results** | Choose from up to 5 movie matches |
-| 📤 **Auto Posting** | Posts to configured channel automatically |
-| 🖼️ **Poster Support** | Downloads and posts movie posters |
-| ⭐ **Rich Templates** | Professional formatting with ratings |
-| 🔄 **Retry Logic** | Automatic retries for failed requests |
-| 💾 **Smart Caching** | Caches posters for faster responses |
-| 🛡️ **Error Handling** | Graceful error recovery |
-
-</div>
-
-### 🎭 Filename Parsing Examples
-
-```
-✅ Avengers.Endgame.2019.1080p.BluRay.x264.mkv
-   → Title: "Avengers Endgame" | Year: 2019
-
-✅ @ChannelName_Movie_2024_WEB-DL_Telugu_AAC.mkv
-   → Title: "Movie" | Year: 2024
-
-✅ The.Dark.Knight.(2008).IMAX.REMASTERED.mkv
-   → Title: "The Dark Knight" | Year: 2008
-
-✅ [Release.Group] Movie Title 720p HDRip.mp4
-   → Title: "Movie Title" | Year: Auto-detected
-```
-
----
-
-## 🎥 Demo
-
-<div align="center">
-
-### Bot Interaction Flow
-
-```mermaid
-graph LR
-    A[📁 Send Movie File] --> B[🧠 Parse Filename]
-    B --> C[🔍 Search TMDB]
-    C --> D[📋 Show Results]
-    D --> E[👆 Select Movie]
-    E --> F[📤 Post to Channel]
-    F --> G[✅ Done!]
-```
-
-</div>
-
-### Screenshots
-
-<details>
-<summary>📱 Click to view screenshots</summary>
-
-<div align="center">
-
-| Step 1: Send File | Step 2: Parse & Search |
-|:-----------------:|:----------------------:|
-| ![Send File](assets/screenshot-1.png) | ![Search](assets/screenshot-2.png) |
-
-| Step 3: Select Movie | Step 4: Posted! |
-|:--------------------:|:---------------:|
-| ![Select](assets/screenshot-3.png) | ![Posted](assets/screenshot-4.png) |
-
-</div>
-
-</details>
-
-### Channel Post Preview
-
-```
-┌─────────────────────────────────────────┐
-│ 🎞️ MOVIE: Inception (2010)              │
-│ ✨ Rating: ⭐⭐⭐⭐⭐ 8.8/10 (35,000 votes) │
-│ ⏱ Runtime: 2h 28m                       │
-│ 🎭 Genre: Action, Sci-Fi, Thriller      │
-│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
-│ 💬 Synopsis                              │
-│ A thief who steals corporate secrets    │
-│ through dream-sharing technology...     │
-│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ │
-│ 🍿 Powered by CineBrain Movie Bot 🤖    │
-│                                         │
-│ #Inception #2010 #Action #MustWatch     │
-└─────────────────────────────────────────┘
-```
-
----
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.10 or higher
-- Telegram Bot Token ([Get from @BotFather](https://t.me/BotFather))
-- TMDB API Key ([Get from TMDB](https://www.themoviedb.org/settings/api))
-- Telegram Channel (with bot as admin)
-
-### 30-Second Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/cinebrain-movie-bot.git
-cd cinebrain-movie-bot
-
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# Linux/Mac:
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your credentials
-
-# Run the bot
-python run.py
-```
-
----
-
-## 📦 Installation
-
-### Method 1: Standard Installation
-
-<details>
-<summary>Click to expand</summary>
-
-#### Step 1: Clone Repository
-
-```bash
-git clone https://github.com/yourusername/cinebrain-movie-bot.git
-cd cinebrain-movie-bot
-```
-
-#### Step 2: Create Virtual Environment
-
-```bash
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# Linux/macOS
-python3 -m venv venv
-source venv/bin/activate
-```
-
-#### Step 3: Install Dependencies
-
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-#### Step 4: Configure Environment
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` with your favorite editor:
-
-```env
-TELEGRAM_BOT_TOKEN=your_bot_token_here
-TELEGRAM_CHANNEL_ID=-1001234567890
-TMDB_API_KEY=your_tmdb_api_key_here
-LOG_LEVEL=INFO
-```
-
-#### Step 5: Run the Bot
-
-```bash
-python run.py
-```
-
-</details>
-
-### Method 2: Docker Installation
-
-<details>
-<summary>Click to expand</summary>
-
-```bash
-# Clone repository
-git clone https://github.com/yourusername/cinebrain-movie-bot.git
-cd cinebrain-movie-bot
-
-# Create .env file
-cp .env.example .env
-# Edit .env with your credentials
-
-# Build and run with Docker Compose
-docker-compose up -d
-
-# View logs
-docker-compose logs -f
-
-# Stop the bot
-docker-compose down
-```
-
-</details>
-
----
-
-## ⚙️ Configuration
-
-### Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-# ═══════════════════════════════════════════════════════════
-# 🎬 CINEBRAIN MOVIE BOT CONFIGURATION
-# ═══════════════════════════════════════════════════════════
-
-# ─────────────────────────────────────────────────────────────
-# TELEGRAM SETTINGS
-# ─────────────────────────────────────────────────────────────
-
-# Bot token from @BotFather
-TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
-
-# Channel ID (must start with -100)
-TELEGRAM_CHANNEL_ID=-1001234567890
-
-# ─────────────────────────────────────────────────────────────
-# TMDB SETTINGS
-# ─────────────────────────────────────────────────────────────
-
-# API key from themoviedb.org
-TMDB_API_KEY=your_32_character_api_key_here
-
-# API URLs (usually don't change)
-TMDB_BASE_URL=https://api.themoviedb.org/3
-TMDB_IMAGE_BASE_URL=https://image.tmdb.org/t/p
-
-# ─────────────────────────────────────────────────────────────
-# BOT SETTINGS
-# ─────────────────────────────────────────────────────────────
-
-# Logging level: DEBUG, INFO, WARNING, ERROR
-LOG_LEVEL=INFO
-
-# Cache settings
-POSTER_CACHE_TTL=3600
-POSTER_CACHE_MAX_SIZE=100
-
-# Request settings
-REQUEST_TIMEOUT=30
-MAX_RETRIES=3
-
-# ─────────────────────────────────────────────────────────────
-# ACCESS CONTROL (Optional)
-# ─────────────────────────────────────────────────────────────
-
-# Comma-separated user IDs (leave empty for all users)
-ALLOWED_USER_IDS=
-```
-
-### Getting Your Credentials
-
-<details>
-<summary>🤖 How to get Telegram Bot Token</summary>
-
-1. Open Telegram and search for `@BotFather`
-2. Send `/newbot`
-3. Follow the prompts to create your bot
-4. Copy the token provided
-
-</details>
-
-<details>
-<summary>📺 How to get Channel ID</summary>
-
-**Method 1: Using @userinfobot**
-1. Forward any message from your channel to `@userinfobot`
-2. It will reply with the channel ID
-
-**Method 2: Using Web Telegram**
-1. Open [web.telegram.org](https://web.telegram.org)
-2. Navigate to your channel
-3. Look at the URL: `web.telegram.org/z/#-1001234567890`
-4. The number after `#` is your channel ID
-
-</details>
-
-<details>
-<summary>🎬 How to get TMDB API Key</summary>
-
-1. Go to [themoviedb.org](https://www.themoviedb.org/)
-2. Create an account and verify email
-3. Go to Settings → API
-4. Request an API key (choose "Developer")
-5. Copy the "API Key (v3 auth)"
-
-</details>
-
----
-
-## 📖 Usage
-
-### Basic Workflow
-
-```
-1️⃣  Forward a movie file to the bot
-         ↓
-2️⃣  Bot parses filename and shows detected title
-         ↓
-3️⃣  Click "Search" or "Edit Title"
-         ↓
-4️⃣  Select the correct movie from results
-         ↓
-5️⃣  Movie is posted to channel with poster!
-```
-
-### Interactive Buttons
-
-| Button | Action |
-|--------|--------|
-| ✅ **Search** | Search TMDB with detected title |
-| ✏️ **Edit Title** | Manually enter correct title |
-| ❌ **Cancel** | Cancel the operation |
-| 🎬 **Movie Options** | Select from search results |
-| ❌ **None of these** | Enter title manually |
-
----
-
-## 🎮 Commands
-
-| Command | Description |
-|---------|-------------|
-| `/start` | Welcome message and instructions |
-| `/help` | Detailed help and usage guide |
-| `/status` | Check bot and API status |
-| `/parse <filename>` | Test filename parser |
-| `/about` | About the bot |
-| `/stats` | View bot statistics (admin) |
-| `/cancel` | Cancel current operation |
-
-### Command Examples
-
-```
-/parse Avengers.Endgame.2019.1080p.BluRay.mkv
-→ 🎬 Title: Avengers Endgame
-→ 📅 Year: 2019
-
-/status
-→ ✅ Bot Status: Online
-→ 🎬 TMDB: Connected
-→ 🚀 Ready to process movies!
-```
-
----
-
-## 🌐 Deployment
-
-### Free Deployment Options
-
-<div align="center">
-
-| Platform | Cost | Setup Time | Reliability |
-|----------|------|------------|-------------|
-| [![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)](https://railway.app) | Free $5/mo | 5 mins | ⭐⭐⭐⭐ |
-| [![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=white)](https://render.com) | Free | 5 mins | ⭐⭐⭐⭐ |
-| [![Fly.io](https://img.shields.io/badge/Fly.io-8B5CF6?style=flat-square&logo=fly.io&logoColor=white)](https://fly.io) | Free | 10 mins | ⭐⭐⭐⭐ |
-| [![Oracle](https://img.shields.io/badge/Oracle_Cloud-F80000?style=flat-square&logo=oracle&logoColor=white)](https://cloud.oracle.com) | Free Forever | 30 mins | ⭐⭐⭐⭐⭐ |
-
-</div>
-
-### Deploy to Railway (Recommended)
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/your-template)
-
-<details>
-<summary>📝 Manual Railway Setup</summary>
-
-1. Fork this repository
-2. Go to [railway.app](https://railway.app)
-3. Click "New Project" → "Deploy from GitHub"
-4. Select your forked repository
-5. Add environment variables
-6. Deploy!
-
-</details>
-
-### Deploy to Render
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-
-<details>
-<summary>📝 Manual Render Setup</summary>
-
-1. Fork this repository
-2. Go to [render.com](https://render.com)
-3. Click "New +" → "Background Worker"
-4. Connect your repository
-5. Add environment variables
-6. Deploy!
-
-</details>
-
-### Deploy to VPS (Oracle Cloud Free)
-
-<details>
-<summary>📝 VPS Deployment Guide</summary>
-
-```bash
-# SSH into your VPS
-ssh ubuntu@your-vps-ip
-
-# Clone repository
-git clone https://github.com/yourusername/cinebrain-movie-bot.git
-cd cinebrain-movie-bot
-
-# Run setup script
-chmod +x deploy.sh
-./deploy.sh
-
-# Edit configuration
-nano .env
-
-# Start the bot
-sudo systemctl start moviebot
-
-# Check status
-sudo systemctl status moviebot
-```
-
-</details>
-
----
-
-## 📁 Project Structure
-
-```
-cinebrain-movie-bot/
-│
-├── 📄 run.py                 # Entry point
-├── 📄 requirements.txt       # Dependencies
-├── 📄 .env.example          # Environment template
-├── 📄 Dockerfile            # Docker configuration
-├── 📄 docker-compose.yml    # Docker Compose config
-├── 📄 Procfile              # Process file for deployment
-├── 📄 railway.json          # Railway configuration
-├── 📄 render.yaml           # Render configuration
-│
-├── 📁 src/
-│   ├── 📄 __init__.py
-│   ├── 📄 bot.py            # Main bot module
-│   ├── 📄 config.py         # Configuration management
-│   ├── 📄 tmdb_service.py   # TMDB API client
-│   │
-│   ├── 📁 handlers/
-│   │   ├── 📄 __init__.py
-│   │   └── 📄 movie_handler.py  # Movie processing
-│   │
-│   └── 📁 utils/
-│       ├── 📄 __init__.py
-│       ├── 📄 parser.py     # Filename parser
-│       └── 📄 cache.py      # Caching utilities
-│
-├── 📁 systemd/
-│   └── 📄 movie-bot.service # Systemd service file
-│
-└── 📁 assets/
-    ├── 📄 banner.png
-    └── 📄 screenshots/
-```
-
----
-
-## 🔧 API Reference
-
-### MovieInfo Object
-
-```python
-@dataclass
-class MovieInfo:
-    id: int                      # TMDB movie ID
-    title: str                   # Movie title
-    year: Optional[int]          # Release year
-    rating: float                # Rating (0-10)
-    overview: str                # Synopsis
-    poster_url: Optional[str]    # Poster image URL
-    runtime: Optional[int]       # Runtime in minutes
-    genres: List[str]            # List of genres
-    tagline: Optional[str]       # Movie tagline
-    vote_count: int              # Number of votes
-```
-
-### FilenameParser
-
-```python
-from src.utils.parser import parse_filename
-
-result = parse_filename("Movie.Name.2024.1080p.WEB-DL.mkv")
-print(result.title)  # "Movie Name"
-print(result.year)   # 2024
-```
-
----
-
-## 🔍 Troubleshooting
-
-<details>
-<summary>❌ Bot not responding</summary>
-
-1. Check if bot is running: `sudo systemctl status moviebot`
-2. View logs: `sudo journalctl -u moviebot -f`
-3. Verify bot token is correct
-4. Ensure bot is not blocked
-
-</details>
-
-<details>
-<summary>❌ TMDB search not working</summary>
-
-1. Verify TMDB API key is correct
-2. Check API rate limits
-3. Ensure internet connectivity
-4. View logs for error details
-
-</details>
-
-<details>
-<summary>❌ Cannot post to channel</summary>
-
-1. Verify channel ID is correct (must start with `-100`)
-2. Ensure bot is admin in channel
-3. Check bot has "Post Messages" permission
-4. Try removing and re-adding bot to channel
-
-</details>
-
-<details>
-<summary>❌ Filename not parsed correctly</summary>
-
-1. Use `/parse <filename>` to test
-2. Use "Edit Title" button to correct
-3. Include year in search for better results
-4. Report issues on GitHub
-
-</details>
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-### Development Setup
-
-```bash
-# Fork and clone
-git clone https://github.com/yourusername/cinebrain-movie-bot.git
-cd cinebrain-movie-bot
-
-# Create branch
-git checkout -b feature/your-feature
-
-# Make changes and test
-python run.py
-
-# Commit and push
-git add .
-git commit -m "Add: your feature description"
-git push origin feature/your-feature
-
-# Open Pull Request
-```
-
-### Contribution Guidelines
-
-- 📝 Follow PEP 8 style guide
-- ✅ Add tests for new features
-- 📖 Update documentation
-- 🔍 Test thoroughly before submitting
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 CineBrain
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
----
-
-## 🙏 Acknowledgments
-
-<div align="center">
-
-| | |
-|:-:|:-:|
-| [![TMDB](https://img.shields.io/badge/Powered%20by-TMDB-01D277?style=for-the-badge&logo=themoviedatabase&logoColor=white)](https://www.themoviedb.org/) | Movie data provided by TMDB |
-| [![Telegram](https://img.shields.io/badge/Built%20for-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://telegram.org/) | Telegram Bot Platform |
-| [![Python](https://img.shields.io/badge/Made%20with-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/) | python-telegram-bot library |
-
-</div>
-
----
-
-## 💬 Support
-
-<div align="center">
-
-| Channel | Link |
-|---------|------|
-| 📧 **Email** | support@cinebrain.com |
-| 💬 **Telegram** | [@CineBrainSupport](https://t.me/CineBrainSupport) |
-| 🐛 **Issues** | [GitHub Issues](https://github.com/yourusername/cinebrain-movie-bot/issues) |
-| 💡 **Discussions** | [GitHub Discussions](https://github.com/yourusername/cinebrain-movie-bot/discussions) |
-
-</div>
-
----
-
-<div align="center">
-
-### ⭐ Star this repository if you found it helpful!
-
-<br>
-
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/cinebrain-movie-bot?style=social)](https://github.com/yourusername/cinebrain-movie-bot/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/cinebrain-movie-bot?style=social)](https://github.com/yourusername/cinebrain-movie-bot/network/members)
-[![GitHub watchers](https://img.shields.io/github/watchers/yourusername/cinebrain-movie-bot?style=social)](https://github.com/yourusername/cinebrain-movie-bot/watchers)
-
-<br>
-
-**Made with ❤️ by [CineBrain](https://cinebrain.vercel.app/)**
-
-<img src="https://raw.githubusercontent.com/yourusername/cinebrain-movie-bot/main/assets/footer.png" alt="Footer" width="600">
-
-</div>
-```
-
----
-
-## 📁 Also Create These Asset Files
-
-### 1. Create `assets/` folder with placeholder images
-
-Create a folder called `assets` and add these placeholder files (you can replace with actual images later):
-
-### 2. LICENSE file
-
-```
-MIT License
-
-Copyright (c) 2024 CineBrain
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-### 3. CONTRIBUTING.md
+**Ready to try the best online markdown editor?** Clear this text and start typing your own markdown content. Here's a sample to get you started:
 
 ```markdown
-# Contributing to CineBrain Movie Bot
+# My Project Documentation
 
-Thank you for your interest in contributing! 🎉
+Welcome to my project! This README was created using **MarkdownLivePreview.dev**.
 
-## How to Contribute
+## Quick Setup
+1. Clone the repository
+2. Install dependencies: `npm install`  
+3. Start development: `npm run dev`
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## Features
+- ✅ **Real-time preview** while you edit
+- ✅ **File upload support** for existing .md files
+- ✅ **LaTeX equations**: $E = mc^2$
+- ✅ **Table generator** for data formatting
 
-## Development Guidelines
+| Feature | Status | Notes |
+|---------|--------|-------|
+| Editor | ✅ Live | Real-time preview |
+| Upload | ✅ Ready | Drag & drop files |
+| Export | ✅ Works | PDF, HTML, MD |
 
-- Follow PEP 8 style guide
-- Add docstrings to all functions
-- Write meaningful commit messages
-- Test your changes thoroughly
+## Get Started
+Visit [MarkdownLivePreview.dev](/) to start editing!
+```
 
-## Reporting Bugs
+> **🎯 Pro Tip**: Replace this example content with your own markdown and watch the live preview update instantly!
 
-Use GitHub Issues with:
-- Clear description
-- Steps to reproduce
-- Expected vs actual behavior
-- Screenshots if applicable
+## Master Markdown Syntax with Our Cheat Sheet
 
-## Feature Requests
+Learn **markdown** quickly with our comprehensive [markdown cheat sheet](/cheatsheet). Whether you're new to **markdown syntax** or need a quick reference, our **cheat sheet** covers everything from basic formatting to advanced features.
 
-We love new ideas! Open an issue with:
-- Clear description of the feature
-- Use case explanation
-- Any implementation suggestions
+**Essential markdown syntax examples**:
+- **Headers**: `# Heading 1`, `## Heading 2`
+- **Bold in markdown**: `**bold text**` or `__bold text__`
+- **Links in markdown**: `[Link Text](URL)`
+- **Markdown tables**: `| Col 1 | Col 2 |`
+- **Line breaks in markdown**: Use two spaces at the end
+- **Code blocks**: ```language` for syntax highlighting
 
-Thank you for contributing! 🙏
+**Advanced markdown features**:
+- Task lists with checkboxes
+- **Markdown strikethrough**: `~~strikethrough~~`
+- Nested lists and formatting
+- **Markdown footnotes** for references
+
+> **Bookmark this**: Our [markdown cheat sheet](/cheatsheet) is your complete **markdown guide**!
+
+## Markdown Table Generator - Create Tables Effortlessly
+
+Building **markdown tables** has never been easier! Our [markdown table generator](/tools/table-generator) helps you create professional **tables in markdown** format with live preview. Perfect for documentation, GitHub READMEs, and technical reports.
+
+**Why use our markdown table generator?**
+- Visual table editor with instant **markdown** output
+- Support for complex **markdown table** formatting
+- Copy-paste functionality for quick workflow integration
+- **Markdown table syntax** validation and correction
+
+### Example Markdown Table
+
+| Feature | Description | Perfect For |
+|---------|-------------|-------------|
+| **Markdown Editor** | Real-time editing with preview | READMEs, documentation |
+| **Table Generator** | Visual table creation | Data presentation |
+| **Markdown Viewer** | File preview and validation | Content review |
+
+> **Pro Tip**: Master **markdown table** formatting with our [cheat sheet](/cheatsheet) - includes advanced **table in markdown** techniques!
+
+## Markdown to HTML Converter - Transform Your Content
+
+Convert **markdown to HTML** effortlessly with our [markdown to HTML converter](/tools/html-converter). Essential for web developers, bloggers, and content creators who need to transform **markdown files** into web-ready HTML.
+
+**Key features of our markdown converter**:
+- Preserves **markdown formatting** in HTML output
+- Supports **markdown tables**, code blocks, and links
+- **Markdown syntax** highlighting in HTML
+- One-click conversion from **markdown to HTML**
+
+### Example: Markdown to HTML Conversion
+
+**Markdown Input:**
+```markdown
+# Welcome to My Project
+This is a **bold** paragraph with a [link to our tools](/tools).
+
+## Features
+- Easy **markdown** editing
+- **HTML** export functionality
+```
+
+**HTML Output:**
+```html
+<h1>Welcome to My Project</h1>
+<p>This is a <strong>bold</strong> paragraph with a <a href="/tools">link to our tools</a>.</p>
+<h2>Features</h2>
+<ul>
+  <li>Easy <strong>markdown</strong> editing</li>
+  <li><strong>HTML</strong> export functionality</li>
+</ul>
+```
+
+## Convert RTF to Markdown
+
+Migrate documents easily with our [RTF to Markdown converter](/tools/rtf-to-markdown). Convert RTF files into Markdown for seamless integration into your workflows.
+
+## Generate Links with Markdown Link Generator
+
+Format links effortlessly with our [Markdown link generator](/tools/link-generator). Ideal for creating clean, professional links in READMEs and documentation.
+
+### Example Link
+
+- **Generated Link**: [Explore Markdown](#) *(created with our [link generator](/tools/link-generator))*
+
+## Create Nested Lists with List Generator
+
+Build ordered or nested lists with our [Markdown list generator](/tools/list-generator]. Perfect for organizing content in your Markdown files.
+
+### Example List
+
+- Task List
+  - [ ] To-do item
+  - [x] Completed item
+
+> **Tip**: Try our [list generator](/tools/list-generator) for complex lists!
+
+## Markdown to PDF Converter - Professional Documents
+
+Transform your **markdown** content into professional PDFs with our [markdown to PDF converter](/tools/markdown-to-pdf). Perfect for creating printable documentation, reports, and presentations from your **markdown files**.
+
+**Benefits of markdown to PDF conversion**:
+- Preserve **markdown formatting** in PDF output
+- **Markdown tables** render perfectly in PDF format
+- Include code syntax highlighting in PDFs
+- Professional styling for business documents
+- **Convert markdown** content for offline sharing
+
+### Popular Use Cases for Markdown PDF Export
+
+- Convert **README.md** files for project presentations
+- Transform **markdown documentation** into client deliverables
+- Create printable versions of **markdown guides**
+- Archive **markdown content** in PDF format
+
+> **Pro Tip**: Combine our [markdown formatter](/tools/markdown-formatter) with **PDF export** for perfectly styled documents!
+
+## Export Markdown to Word
+
+Convert your Markdown files to Word documents with our [Markdown to Word converter](/tools/markdown-to-word). Ideal for professional editing, collaboration, or sharing with non-technical teams.
+
+### Example Use Case
+
+Transform a Markdown technical guide into a Word document for stakeholder reviews or formal submissions.
+
+> **Tip**: Try our [Markdown to Word converter](/tools/markdown-to-word) for easy collaboration!
+
+## Format Markdown with Markdown Formatter
+
+Ensure your Markdown follows best practices with our [Markdown formatter](/tools/markdown-formatter). Automatically fix syntax, align tables, and beautify code blocks.
+
+### Example Formatting
+
+**Before:**
+```markdown
+#Header
+- item1
+ - item2
+```
+
+**After:**
+```markdown
+# Header
+- Item 1
+- Item 2
+```
+
+> **Tip**: Beautify your Markdown with our [Markdown formatter](/tools/markdown-formatter)!
+
+## Generate a Table of Contents
+
+Add a table of contents to your Markdown files with our [Markdown TOC generator](/tools/toc-generator]. Perfect for long documents or technical guides.
+
+### Example TOC
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Conclusion](#conclusion)
+
+> **Tip**: Enhance navigation with our [Markdown TOC generator](/tools/toc-generator]!
+
+## Showcase Code, Math, and More
+
+### Code Syntax Highlighting
+
+Display code in multiple languages with vibrant formatting:
+
+```python
+def fibonacci(n):
+    """Generate Fibonacci sequence."""
+    a, b = 0, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+```
+
+```javascript
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    return await response.json();
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+```
+
+> **Tip**: See more code examples in our [example gallery](/examples).
+
+### LaTeX Math Equations in Markdown
+
+Create professional **math equations in markdown** with our **markdown latex** support. Perfect for academic papers, technical documentation, and scientific content. Our **markdown math editor** renders **LaTeX in markdown** using KaTeX for fast, beautiful mathematical notation.
+
+**Popular LaTeX Math Features**:
+- **Greek letters in markdown**: $\alpha$, $\beta$, $\gamma$, $\pi$, $\sigma$, $\theta$
+- **Square root in markdown**: $\sqrt{x}$, $\sqrt[n]{x}$, $\sqrt{x^2 + y^2}$  
+- **Math operators**: $\sum$, $\prod$, $\int$, $\lim$, $\frac{a}{b}$
+- **Mathematical relations**: $\subset$, $\approx$, $\equiv$, $\leq$, $\geq$
+
+**Inline Math Examples**:
+Write **math in markdown**: $E = mc^2$, $\pi \approx 3.14159$, $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+
+**Display Math Equations**:
+$$
+\lim_{h \to 0} \frac{f(x + h) - f(x)}{h} = f'(x)
+$$
+
+**Advanced Mathematical Notation**:
+$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$
+
+> **Learn More**: Master **how to write math in markdown** with LaTeX syntax - perfect for **markdown equations** in technical docs!
+
+## Build Better Documentation
+
+### Getting Started Guide
+
+1. **Edit Markdown Online**: Type in the editor and see a **live Markdown preview**.
+2. **Use Tools**: Access our [tools suite](/tools) for tables, links, and more.
+3. **Learn Syntax**: Master Markdown with our [cheat sheet](/cheatsheet).
+4. **Explore Examples**: Get inspired by our [example gallery](/examples).
+
+### API Documentation Example
+
+Document APIs with clarity:
+
+```typescript
+interface MarkdownEditor {
+  /** Render Markdown to HTML */
+  render(content: string): Promise<string>;
+  /** Save content to localStorage */
+  save(content: string): void;
+}
+```
+
+## Power User Tips
+
+### Keyboard Shortcuts
+
+Speed up your workflow:
+
+- **Bold**: `Ctrl/Cmd + B`
+- **Italic**: `Ctrl/Cmd + I`
+- **Links**: `Ctrl/Cmd + K`
+- **Code**: `Ctrl/Cmd + E`
+
+> **Tip**: Use our [link generator](/tools/link-generator) with shortcuts for fast linking!
+
+### Adding Links & Images
+
+Engage readers with formatted links and images:
+
+- **Descriptive Link**: Try our [online Markdown editor](#).
+- **Image**: ![Markdown Logo](/markdown.png)
+
+## Advanced Formatting Techniques
+
+<details>
+<summary>Advanced Markdown Features</summary>
+
+### Advanced LaTeX Math Examples
+
+**Perfect for academic and scientific content**:
+
+**Piecewise Functions** (**square root in markdown** and conditionals):
+$$
+f(x) = \begin{cases}
+\sqrt{x} & \text{if } x \geq 0 \\
+-\sqrt{|x|} & \text{if } x < 0
+\end{cases}
+$$
+
+**Greek Letters in Complex Equations** (**greek letters in markdown**):
+$$
+\phi(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
+
+**Vector Calculus** (advanced **mathematical notation**):
+$$
+\nabla \times \mathbf{F} = \begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+F_x & F_y & F_z
+\end{vmatrix}
+$$
+
+**Matrix Equations** (**LaTeX in markdown**):
+$$
+\begin{bmatrix}
+\alpha & \beta \\
+\gamma & \delta
+\end{bmatrix}
+\begin{bmatrix}
+x \\ y
+\end{bmatrix} = 
+\begin{bmatrix}
+\alpha x + \beta y \\
+\gamma x + \delta y
+\end{bmatrix}
+$$
+
+</details>
+
+### Footnotes
+
+Add references for clarity:
+
+This editor is a game-changer[^1].
+
+[^1]: Built by [DigitalPro](https://digitalpro.dev).
+
+> **Tip**: Use footnotes to keep content clean.
+
+## Complete Markdown Tools Suite - Everything You Need
+
+Enhance your **markdown** workflow with our comprehensive [tools suite](/tools). Each tool integrates seamlessly with our **markdown editor online** for maximum productivity:
+
+**📊 Table & Structure Tools**:
+- **[Markdown Table Generator](/tools/table-generator)**: Create professional **markdown tables** with live preview
+- **[TOC Generator](/tools/toc-generator)**: Generate **markdown table of contents** automatically
+- **[List Generator](/tools/list-generator)**: Build ordered, unordered, and nested **lists in markdown**
+
+**🔄 Conversion & Export Tools**:
+- **[Markdown to HTML Converter](/tools/html-converter)**: Transform **markdown to HTML** instantly
+- **[Markdown to PDF Converter](/tools/markdown-to-pdf)**: Export **markdown to PDF** with formatting
+- **[Markdown to Word Converter](/tools/markdown-to-word)**: Convert **markdown to Word** documents
+- **[RTF to Markdown Converter](/tools/rtf-to-markdown)**: **Convert to markdown** from RTF files
+
+**✨ Formatting & Enhancement Tools**:
+- **[Markdown Formatter](/tools/markdown-formatter)**: Beautify and standardize **markdown syntax**
+- **[Link Generator](/tools/link-generator)**: Create perfect **links in markdown** format
+
+---
+
+## Ready to Edit Markdown Online?
+
+**Join thousands of users** who trust **MarkdownLivePreview.dev** as their go-to **markdown editor online**. Our **free online markdown editor** combines powerful features with an intuitive interface - perfect for beginners and professionals alike.
+
+**🎯 What makes us the best online markdown editor?**
+- ⚡ **Instant loading** - Start editing immediately, no signup required
+- 🔄 **Real-time sync** - **Live markdown preview** updates as you type  
+- 📱 **Universal access** - Works on any device with a web browser
+- 🛠️ **Professional tools** - Built-in table generator, file upload, export options
+- 💾 **Auto-save** - Never lose your work with automatic browser storage
+
+**🚀 Popular among:**
+- 👨‍💻 **Developers** using it for README files and documentation
+- ✍️ **Writers** creating blogs and articles with markdown
+- 🎓 **Students** working on academic papers with LaTeX equations
+- 💼 **Professionals** building reports and presentations
+
+> **Ready to experience the best markdown editor online?** Start typing in the editor above or upload your existing .md files. It's completely free!
+
+---
+
+<div align="center">
+
+### Complete Markdown Editor Online - 100% Free ✨
+
+Begin creating professional documentation with **MarkdownLivePreview.dev** - the best **free online markdown editor**. Whether you need to **edit markdown online**, use our **markdown viewer**, or generate **markdown tables**, we have the tools you need.
+
+**Get Started**:
+- 🚀 **[Edit Markdown Online](#)** - Start typing in the editor above
+- 📖 **[Markdown Cheat Sheet](/cheatsheet)** - Master **markdown syntax** quickly
+- 🛠️ **[Tools Suite](/tools)** - **Markdown table generator**, converters, and more
+- 💡 **[Examples Gallery](/examples)** - **Markdown** inspiration and templates
+
+**Why choose our markdown editor online?**
+✅ **Free forever** - No signup required  
+✅ **Live preview** - See results instantly  
+✅ **All devices** - Works on desktop, tablet, and mobile  
+✅ **Export options** - **Markdown to PDF**, HTML, Word, and more
+
+</div>
