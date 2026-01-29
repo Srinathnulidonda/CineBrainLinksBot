@@ -1,0 +1,36 @@
+[Unit]
+Description=Movie Enrichment Telegram Bot
+Documentation=https://github.com/your-repo/movie-enrichment-bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=moviebot
+Group=moviebot
+WorkingDirectory=/opt/movie-enrichment-bot
+ExecStart=/opt/movie-enrichment-bot/venv/bin/python run.py
+Restart=always
+RestartSec=10
+
+# Environment
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/opt/movie-enrichment-bot/.env
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/movie-enrichment-bot/logs
+
+# Resource limits
+MemoryMax=512M
+CPUQuota=50%
+
+# Logging
+StandardOutput=append:/var/log/movie-bot/output.log
+StandardError=append:/var/log/movie-bot/error.log
+
+[Install]
+WantedBy=multi-user.target
